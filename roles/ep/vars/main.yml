@@ -1,0 +1,6 @@
+---
+    # vars file for epinstallations
+    sharepath: \\10.10.10.129\share\EP
+    sharepathuser: atmecsadmin
+    sharepathpassword: adm1n@tm3c$
+    

@@ -1,0 +1,26 @@
+
+---
+    # tasks file for epinstallations    
+    
+- name: Install FortiNAC
+  win_package:
+    path: "{{sharepath}}\\FortiNAC.msi"
+    product_id: FortiNAC
+    user_name: "{{sharepathuser}}"
+    user_password: "{{sharepathpassword}}"
+    state: present
+- name: Install Bradford
+  win_package:
+    path: "{{sharepath}}\\Bradford.exe"
+    product_id: Bradford
+    user_name: "{{sharepathuser}}"
+    user_password: "{{sharepathpassword}}"
+    state: absent
+
+- name: Install CiscoAnyConnect
+  win_package:
+    path: "{{sharepath}}\\anyconnect.msi"
+    product_id: CiscoAnyConnect
+    user_name: "{{sharepathuser}}"
+    user_password: "{{sharepathpassword}}"
+    state: present

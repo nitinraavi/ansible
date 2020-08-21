@@ -1,5 +1,5 @@
 [windows]
-55.55.52.153
+55.55.52.154
 [windows:vars]
 ansible_user= atmecsadmin
 ansible_password=$3cur3W0r1DJ@n

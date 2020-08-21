@@ -1,2 +1,5 @@
 ---
 # vars file for domain
+domain_admin_user: itadmin.nitin@atmecs.corp
+domain_password: Umake$194
+hostname: ATMECSINLT-800

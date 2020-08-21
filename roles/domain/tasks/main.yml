@@ -1,2 +1,16 @@
 ---
 # tasks file for domain
+- hosts: windows
+  gather_facts: no
+  tasks:
+  - win_domain_membership:
+      dns_domain_name: ATMECS.CORP
+      hostname: "{{hostname}}"
+      domain_admin_user: "{{domain_admin_user}}"
+      domain_admin_password: "{{domain_password}}"
+      domain_ou_path: "OU=Corp Office,OU=Laptops,DC=atmecs,DC=corp"
+      state: domain
+    register: domain_state
+
+  - win_reboot:
+    when: domain_state.reboot_required

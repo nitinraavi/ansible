@@ -7,3 +7,6 @@ ansible_password=$3cur3W0r1DJ@n
 ansible_connection=winrm
 ansible_winrm_transport=credssp
 ansible_winrm_server_cert_validation=ignore
+
+
+aws_key="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
